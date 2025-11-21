@@ -1,6 +1,6 @@
 # StoreSupercell-Spent-Calculator
 
-🛠️ How to Use
+## How to Use 🛠️
 
 Follow these steps to run the script on your Supercell Store purchase page:
 
