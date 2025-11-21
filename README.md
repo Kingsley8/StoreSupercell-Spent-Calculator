@@ -11,7 +11,7 @@ Open DevTools: Press F12 or right-click anywhere on the page and select "Inspect
 Execute: Copy the entire JavaScript block below and paste it into the console prompt.
 
 ```bash
-`const total = Array.from(document.querySelectorAll('.Purchases_PurchaseRowPrice__P_qXV'))
+const total = Array.from(document.querySelectorAll('.Purchases_PurchaseRowPrice__P_qXV'))
   .map(el => el.textContent.trim())
   .map(text => {
     // Cleans the text: removes all non-numeric characters except for commas and dots, 
@@ -20,6 +20,8 @@ Execute: Copy the entire JavaScript block below and paste it into the console pr
     return parseFloat(cleanedText) || 0; // Converts to float, defaults to 0 if invalid
   })
   .reduce((sum, value) => sum + value, 0);
+
+console.log('Total Sum of Purchases:', total.toFixed(2));
 ```
 console.log('Total Sum of Purchases:', total.toFixed(2));`
 
